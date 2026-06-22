@@ -131,25 +131,27 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
         .topnav nav a:hover{color:#D2848C;}
         .topnav .cta{background:linear-gradient(135deg,#FFE16B,#FFD700);color:#6b4d00;font-weight:800;padding:10px 20px;border-radius:999px;font-size:14px;box-shadow:0 4px 12px rgba(255,215,0,.4);white-space:nowrap;}
         @media(max-width:780px){.topnav nav{display:none;}}
-        .hero{position:relative;background:linear-gradient(135deg,#FCEEF0 0%,#FBE3E6 100%);overflow:hidden;}
-        .hero-photo{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.28;}
-        .hero-inner{position:relative;max-width:1080px;margin:0 auto;padding:54px 22px 60px;display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center;}
+        .hero{position:relative;background:linear-gradient(135deg,#FAD2D8 0%,#F3B7C0 100%);overflow:hidden;}
+        .hero-photo{position:absolute;inset:0;background-size:cover;background-position:center 30%;opacity:.42;}
+        .hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(250,210,216,.55),rgba(243,183,192,.30));pointer-events:none;}
+        .hero-inner{position:relative;z-index:2;max-width:1080px;margin:0 auto;padding:54px 22px 60px;display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center;}
         .hero-badge{display:inline-block;background:#fff;color:#C97C84;border:1.5px solid #E8B4B8;font-weight:700;font-size:13px;padding:6px 16px;border-radius:999px;margin-bottom:18px;box-shadow:0 2px 8px rgba(232,180,184,.25);}
         .hero h2{font-size:34px;line-height:1.32;font-weight:800;color:#6b4146;margin-bottom:16px;}
         .hero h2 .hl{color:#fff;background:linear-gradient(120deg,#FFD700,#FFC400);padding:0 10px;border-radius:8px;}
         .hero p.lead{font-size:15.5px;color:#7a5d60;line-height:1.85;margin-bottom:26px;}
         .hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
         .btn-pill{display:inline-flex;align-items:center;gap:8px;padding:15px 30px;border-radius:999px;font-weight:800;font-size:16px;text-decoration:none;cursor:pointer;border:none;}
-        .btn-pink{background:linear-gradient(135deg,#EBA9AF,#D2848C);color:#fff;box-shadow:0 8px 20px rgba(210,132,140,.4);}
+        .btn-pink{background:linear-gradient(135deg,#E2848D,#C45F69);color:#fff;box-shadow:0 10px 26px rgba(196,95,105,.5);}
+        .hero-btns .btn-pink{padding:17px 38px;font-size:17.5px;}
         .btn-ghost{background:#fff;color:#C97C84;border:2px solid #E8B4B8;}
         .hero-card{background:#fff;border-radius:22px;box-shadow:0 18px 50px rgba(199,124,132,.28);overflow:hidden;}
-        .hero-card .hc-photo{height:150px;background-size:cover;background-position:center;}
+        .hero-card .hc-photo{height:200px;background-size:cover;background-position:center;}
         .hero-card .hc-body{padding:20px;}
         .hero-card .hc-score{font-size:46px;font-weight:800;color:#D2848C;line-height:1;}
         .sec{max-width:1080px;margin:0 auto;padding:46px 22px;}
         .sec-head{text-align:center;margin-bottom:30px;}
         .sec-head h3{font-size:25px;font-weight:800;color:#6b4146;margin-bottom:8px;}
-        .sec-head h3 .num{color:#D2848C;}
+        .sec-head h3 .num{color:#C45F69;}
         .sec-head p{color:#9a7d80;font-size:14px;}
         .grid{display:grid;gap:18px;}
         .g2{grid-template-columns:repeat(2,1fr);}
@@ -179,11 +181,11 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
         .pcard .pb{padding:14px;}
         .pcard h4{font-size:14px;font-weight:700;color:#6b4146;margin-bottom:5px;}
         .pcard p{font-size:12px;color:#9a7d80;line-height:1.7;}
-        .band{background:linear-gradient(135deg,#E8B4B8,#D98890);text-align:center;padding:50px 22px;color:#fff;}
+        .band{background:linear-gradient(135deg,#DB939B,#C45F69);text-align:center;padding:50px 22px;color:#fff;box-shadow:0 12px 30px rgba(196,95,105,.28);}
         .band h3{font-size:25px;font-weight:800;margin-bottom:12px;}
         .band p{font-size:14px;opacity:.95;margin-bottom:24px;}
         .band .btn-pill{background:#fff;color:#C97C84;box-shadow:0 8px 22px rgba(0,0,0,.18);}
-        .soft{background:#FCEEF0;}
+        .soft{background:linear-gradient(135deg,#FBE2E6,#F8D4DA);}
 
 @media print{
   header,footer,nav,button,.no-print,
